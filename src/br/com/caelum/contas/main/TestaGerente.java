@@ -8,8 +8,9 @@ public class TestaGerente {
 		Gerente gerente = new Gerente();
 		
 		gerente.setNome("Afonso Serafim");
-		
 		gerente.setSenha(12345);
+		gerente.setSalario(5000);
+		System.out.println(gerente.getBonificacao());
 	}
 
 }
