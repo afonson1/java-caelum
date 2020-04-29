@@ -20,7 +20,7 @@ public class Programa {
 		Data data = new Data();
 		data.setAno(2020);
 		data.setMes(11);
-		data.setDia(32);
+		data.setDia(2);
 		System.out.println(data.formatada());
 		data.verificaData(data.getDia(), data.getMes(), data.getAno());
 	}
