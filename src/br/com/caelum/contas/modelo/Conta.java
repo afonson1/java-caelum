@@ -5,7 +5,7 @@ public class Conta {
 	private String titular;
 	private int numero;
 	private String agencia;
-	private double saldo;
+	protected double saldo;
 	private Data dataDeAbertura = new Data();
 	private static int identificador;
 	
@@ -48,12 +48,21 @@ public class Conta {
 		return this.saldo;
 	}
 
+	public String getTipo(){
+		return "Conta ";
+	}
+	
 	public void saca (double valor){
 		this.saldo = this.saldo - valor;
 	}
 
 	public void deposita (double valor){
 		this.saldo += valor;
+	}
+	
+	public void transfere(double valor, Conta conta){
+		this.saca(valor);
+		conta.deposita(valor);
 	}
 	
 	double calculaRendimento(){
