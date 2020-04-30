@@ -78,6 +78,7 @@ public abstract class Conta {
 		dados += "\nSaldo: " + this.saldo;
 		dados += "\nData de Abertura: " + this.dataDeAbertura.formatada();
 		dados += "\n\nRendimento: " + this.calculaRendimento();
+		dados += "\nTipo: " + this.getTipo();
 		return dados;
 	}
 }
