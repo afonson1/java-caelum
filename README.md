@@ -2,4 +2,4 @@
  Projeto da Apostila do Curso FJ-11 - Java e Orientação a Objetos da Caelum - Escola de Tecnologia.
 https://www.caelum.com.br/apostila-java-orientacao-objetos/
  
-Continuar do 10 - Classes Abstratas
+Continuar do 11 - Interfaces
