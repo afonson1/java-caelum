@@ -34,6 +34,7 @@ public class Gerente extends Funcionario {
 	public double getBonificacao(){
 		//O super foi utilizado para chamar o método 'getBonificacao' de uma super classe de Gerente.
 		//return super.getBonificacao();
-		return salario * 0.15;
+		//return salario * 0.15;
+		return this.salario * 1.4 + 1000;
 	}
 }
