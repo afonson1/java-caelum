@@ -1,16 +1,10 @@
 package conteudo_explicacao;
 
-public class Funcionario {
+public abstract class Funcionario {
+	
 	protected String nome;
 	protected String cpf;
 	protected double salario;
-	
-	//Construtor, ainda não foi visto na apostila, aguardar..
-	/*public Funcionario(String nome, String cpf, double salario){
-		this.nome = nome;
-		this.cpf = cpf;
-		this.salario = salario;
-	}*/
 	
 	//Getters e Setters
 	public String getNome(){
@@ -38,8 +32,6 @@ public class Funcionario {
 	}
 	
 	//Métodos
-	public double getBonificacao(){
-		return this.salario * 0.10;
-	}
+	public abstract double getBonificacao();
 
 }
