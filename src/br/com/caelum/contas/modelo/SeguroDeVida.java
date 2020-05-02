@@ -27,7 +27,7 @@ public class SeguroDeVida implements Tributavel{
 	}
 	
 	public String getTipo(){
-		return "segura de vida";
+		return "Seguro de Vida";
 	}
 
 	public double getValor(){
