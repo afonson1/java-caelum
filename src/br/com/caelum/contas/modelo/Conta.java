@@ -55,7 +55,11 @@ public abstract class Conta {
 	}
 
 	public void deposita (double valor){
-		this.saldo += valor;
+		if (valor < 0){
+			throw new IllegalArgumentException("Você tentou depositar um valor inválido");
+		} else {
+			this.saldo += valor;
+		}
 	}
 	
 	public void transfere(double valor, Conta conta){
