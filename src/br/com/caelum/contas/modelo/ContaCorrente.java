@@ -9,9 +9,15 @@ public class ContaCorrente extends Conta implements Tributavel{
 	public void saca(double valor){
 		if (valor < 0){
 			throw new IllegalArgumentException("Você tentou depositar um valor negativo");
-		} else {
-			this.saldo -= (valor + 0.10);
 		}
+		/*nem sempre é interessante utilizarmos um novo tipo de exception! Depende do caso.
+		*Neste aqui, seria melhor utilizarmos IllegalArgumentException.
+		*A boa prática diz que devemos preferir usar as já existentes do Java sempre que possível.
+		*/
+		if (this.saldo < valor){
+			throw new SaldoInsuficienteException(valor);
+		}
+		this.saldo -= (valor + 0.10);
 	}
 
 	@Override
