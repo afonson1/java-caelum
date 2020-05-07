@@ -85,4 +85,8 @@ public abstract class Conta {
 		dados += "\nTipo: " + this.getTipo();
 		return dados;
 	}
+
+	public String toString(){
+		return "[titular=" + titular + ", numero=" + numero + ", agencia=" + agencia + "]";
+	}
 }
