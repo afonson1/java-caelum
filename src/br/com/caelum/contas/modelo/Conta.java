@@ -50,6 +50,17 @@ public abstract class Conta {
 
 	public abstract String getTipo();
 	
+	//MÉTODOS
+	public boolean equals(Object obj){
+		if (obj == null){
+			return false;
+		}
+		
+		Conta outraConta = (Conta) obj;
+		
+		return this.numero == outraConta.numero && this.agencia == outraConta.agencia;
+	}
+	
 	public void saca (double valor){
 		this.saldo = this.saldo - valor;
 	}
@@ -86,6 +97,7 @@ public abstract class Conta {
 		return dados;
 	}
 
+	@Override
 	public String toString(){
 		return "[titular=" + titular + ", numero=" + numero + ", agencia=" + agencia + "]";
 	}
