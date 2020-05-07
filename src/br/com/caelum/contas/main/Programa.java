@@ -8,6 +8,10 @@ public class Programa {
 	public static void main(String[] args) {
 		Conta cc =  new ContaCorrente();
 		cc.deposita(100);
+		cc.setAgencia("123");
+		cc.setNumero(125);
+		cc.setTitular("Afonso");
+		System.out.println(cc);
 		
 		try {
 			cc.saca(1000);
