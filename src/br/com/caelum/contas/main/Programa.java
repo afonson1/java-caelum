@@ -1,5 +1,7 @@
 package br.com.caelum.contas.main;
 
+import java.io.PrintStream;
+
 import br.com.caelum.contas.modelo.Conta;
 import br.com.caelum.contas.modelo.ContaCorrente;
 
@@ -11,7 +13,10 @@ public class Programa {
 		cc.setAgencia("123");
 		cc.setNumero(125);
 		cc.setTitular("Afonso");
-		System.out.println(cc);
+		System.out.println("Conta: " + cc);
+		
+		PrintStream saida = System.out;
+		saida.println("ola");
 		
 		try {
 			cc.saca(1000);
