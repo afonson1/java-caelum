@@ -1,15 +1,18 @@
 package conteudo_explicacao;
 
-import java.io.ObjectInputStream.GetField;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
-import br.com.caelum.contas.modelo.ContaCorrente;
-import br.com.caelum.javafx.api.controllers.ContasController;
+/*
+ * import java.io.ObjectInputStream.GetField;
+ * import java.util.ArrayList;
+ * import java.util.Collections;
+ * import java.util.List;
+ * 
+ * import br.com.caelum.contas.modelo.ContaCorrente;
+ * import br.com.caelum.javafx.api.controllers.ContasController;
+ */
 
 public class ArrayList_Aula15 {
 
+	/*
 	public static void main(String[] args) {
 		List lista = new ArrayList();
 		lista.add("Manoel");
@@ -43,5 +46,6 @@ public class ArrayList_Aula15 {
 		
 		System.out.println(lista);		
 	}
+	*/
 
 }
