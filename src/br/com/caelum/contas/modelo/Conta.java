@@ -1,6 +1,11 @@
 package br.com.caelum.contas.modelo;
 
-public abstract class Conta {
+import java.util.Collections;
+import java.util.List;
+
+import br.com.caelum.javafx.api.util.Evento;
+
+public abstract class Conta implements Comparable<Conta>{
 	//ATRIBUTOS
 	private String titular;
 	private int numero;
@@ -101,4 +106,13 @@ public abstract class Conta {
 	public String toString(){
 		return "[titular=" + titular.toUpperCase() + ", numero=" + numero + ", agencia=" + agencia + "]";
 	}
+
+	public int compareTo(Conta outraConta){
+		return this.titular.compareTo(outraConta.titular);
+	}
+	
+	public void ordenaLista(Evento evento){
+		List<Conta> contas = evento.getLista("destino");
+		Collections.sort(contas);
+	};
 }
