@@ -3,5 +3,5 @@
 https://www.caelum.com.br/apostila-java-orientacao-objetos/
  
 Continuar do 15 - Collections framework
-Questão 1 e 2 (Refazer)
+15.7 Conjunto: java.util.set
 https://www.caelum.com.br/apostila-java-orientacao-objetos/collections-framework/
