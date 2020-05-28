@@ -13,13 +13,11 @@ public class Banco {
 		this.setNumero(numero);
 		this.setContas(new ContaCorrente[10]);
 	}
-
 	
 	//GETTERS E SETTERS
 	public String getNome() {
 		return nome;
 	}
-
 	
 	public void setNome(String nome) {
 		this.nome = nome;
